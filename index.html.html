@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<title>Chinnu's Lovely AI Support Agent</title>
+</head>
+
+<body>
+
+<h2>Contact Support - Chinnu's AI Agent</h2>
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00Dg50000012SVw" method="POST">
+
+<input type="hidden" name="orgid" value="00Dg50000012SVw">
+<input type="hidden" name="retURL" value="http://www.google.com">
+
+<label for="name">Contact Name</label>
+<input id="name" maxlength="80" name="name" size="20" type="text" /><br><br>
+
+<label for="email">Email</label>
+<input id="email" maxlength="80" name="email" size="20" type="text" /><br><br>
+
+<label for="phone">Phone</label>
+<input id="phone" maxlength="40" name="phone" size="20" type="text" /><br><br>
+
+<label for="subject">Subject</label>
+<input id="subject" maxlength="80" name="subject" size="20" type="text" /><br><br>
+
+<label for="description">Description</label>
+<textarea name="description"></textarea><br><br>
+
+<input type="hidden" id="external" name="external" value="1" />
+
+<input type="submit" name="submit">
+
+</form>
+
+
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00Dg50000012SVw',
+				'Chinnu_s_Lovely_Agent_Chaneel',
+				'https://orgfarm-c1199a0bb9-dev-ed.develop.my.site.com/ESWChinnusLovelyAgent1775119020406',
+				{
+					scrt2URL: 'https://orgfarm-c1199a0bb9-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-c1199a0bb9-dev-ed.develop.my.site.com/ESWChinnusLovelyAgent1775119020406/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+</body>
+</html>
